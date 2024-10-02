@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #5e35b1; /* Purple background */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+#quiz-container {
+  background-color: #7e57c2; /* Slightly lighter purple */
+  padding: 40px; /* Increased padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 80%; /* Responsive width */
+  max-width: 600px; /* Maximum width */
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #5e35b1;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%; /* Make buttons take full width */
+}
+
+button:hover {
+  background-color: #d1c4e9; /* Light purple */
+}
+
+button.incorrect {
+  border: 2px solid red; /* Red border for incorrect answers */
+  animation: shake 0.5s; /* Shake animation */
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+#options {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+}
+
+#options button {
+  margin: 10px 0; /* Padding between answer choices */
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
